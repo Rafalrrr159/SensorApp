@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/press_button"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:translationY="150dp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/show_location"
+            android:textAlignment="center"
+            android:translationX="5dp" />
+
+        <Button
+            android:id="@+id/button_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:text="@string/show_address"
+            android:textAlignment="center"
+            android:translationX="5dp" />
+    </LinearLayout>
+
+</LinearLayout>
